@@ -12,7 +12,7 @@
     var hasTransitions = require('has-transitions');
     var cssEmitter = require('css-emitter');
 
-    if(hasTransitions) {
+    if(hasTransitions(document.body)) {
       cssEmitter(document.body).bind(onTransitionEnd);
     }
     else {

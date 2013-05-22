@@ -1,2 +1,3 @@
-var docStyle = document.body.style;
-module.exports = "transition" in docStyle || "webkitTransition" in docStyle || "MozTransition" in docStyle;
+module.exports = function(el) {
+  return "transition" in el.style || "webkitTransition" in el.style || "MozTransition" in el.style
+};
