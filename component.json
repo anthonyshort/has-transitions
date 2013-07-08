@@ -1,8 +1,8 @@
 {
   "name": "has-transitions",
   "repo": "anthonyshort/has-transitions",
-  "description": "Determine if the browser supports transitions",
-  "version": "0.1.0",
+  "description": "Determine if an element has transitions",
+  "version": "0.2.0",
   "keywords": [],
   "dependencies": {},
   "development": {},

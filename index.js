@@ -1,3 +1,24 @@
-module.exports = function(el) {
-  return "transition" in el.style || "webkitTransition" in el.style || "MozTransition" in el.style
-};
+var property = false;
+var el = document.body;
+
+if("transition" in el.style) {
+  property = "transition";
+}
+
+if("webkitTransition" in el.style) {
+  property = "webkitTransition";
+}
+
+if("MozTransition" in el.style) {
+  property = "MozTransition";
+}
+
+function hasTransitions(el){
+  if(!el) el = document.body;
+  if(!property) return false;
+  return !!el.style[property];
+}
+hasTransitions.support = (property !== false);
+hasTransitions.property = property;
+
+module.exports = hasTransitions;
