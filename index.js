@@ -16,7 +16,7 @@ if("MozTransition" in el.style) {
 function hasTransitions(el){
   if(!el) el = document.body;
   if(!property) return false;
-  return !!el.style[property];
+  return property in el.style;
 }
 hasTransitions.support = (property !== false);
 hasTransitions.property = property;
