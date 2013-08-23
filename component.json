@@ -2,10 +2,12 @@
   "name": "has-transitions",
   "repo": "anthonyshort/has-transitions",
   "description": "Determine if an element has transitions",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [],
   "dependencies": {},
-  "development": {},
+  "development": {
+    "component/assert": "*"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [

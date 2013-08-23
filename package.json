@@ -1,0 +1,26 @@
+{
+  "name": "has-transitions",
+  "version": "0.3.0",
+  "description": "Check for transition support",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "open test/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonyshort/has-transitions.git"
+  },
+  "keywords": [
+    "component",
+    "browserify",
+    "css",
+    "transitions"
+  ],
+  "author": "Anthony Short",
+  "license": "BSD",
+  "readmeFilename": "Readme.md",
+  "gitHead": "27050348e9fdac520bbb66a9fc6bd0d449da26eb"
+}
