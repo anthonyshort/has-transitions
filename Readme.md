@@ -7,6 +7,10 @@
 
     $ component install anthonyshort/has-transitions
 
+or via npm for Browserify
+
+    $ npm install has-transitions
+
 ## API
 
     var hasTransitions = require('has-transitions');
@@ -16,7 +20,7 @@
       cssEmitter(el).bind(onTransitionEnd);
     }
     else {
-      onTransitionEvent();
+      onTransitionEnd();
     }
 
 ## Methods
@@ -24,17 +28,9 @@
 ### hasTransitions([el])
 
 Determine if an element has any transition properties. If the browser doesn't
-support transitions this will always return false. `el` defaults to `document.body`.
+support transitions this will always return false.
 
-## Properties
-
-### hasTransitions.support
-
-Boolean for whether the browser supports transitions at all
-
-### hasTransitions.property
-
-Get the prefixed property name to use for transitions
+If `el` isn't passed it will return a boolean for browser support for transitions.
 
 ## License
 
