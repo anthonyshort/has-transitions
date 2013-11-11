@@ -14,7 +14,10 @@ var property;
 var types = [
   "transitionDuration",
   "MozTransitionDuration",
-  "webkitTransitionDuration"
+  "webkitTransitionDuration",
+  "msTransitionDuration",
+  "KhtmlTransitionDuration",
+  "OTransitionDuration"
 ];
 
 /**
